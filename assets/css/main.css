@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  ::selection {
+    @apply bg-green text-white;
+  } 
+  * {
+    @apply duration-300 text-black;
+  }
+  html {
+    @apply overflow-x-hidden scroll-smooth;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+  figure {
+    @apply m-0;
+  }
+  img {
+    @apply block max-w-full;
+  }
+  h1 {
+    &,
+    & * {
+      @apply !text-[64px] sm:!text-[36px] !font-semibold;
+    }
+  }
+  h2 {
+    &,
+    & * {
+      @apply !text-[56px] sm:!text-[32px] !font-semibold;
+    }
+  }
+  h3 {
+    &,
+    & * {
+      @apply !text-[48px] sm:!text-[28px] !font-semibold;
+    }
+  }
+  h4 {
+    &,
+    & * {
+      @apply !text-[40px] sm:!text-[24px] !font-semibold;
+    }
+  }
+  h5 {
+    &,
+    & * {
+      @apply !text-[32px] sm:!text-[20px] !font-semibold;
+    }
+  }
+  h6 {
+    &,
+    & * {
+      @apply !text-[24px] sm:!text-[20px] !font-semibold;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &,
+    & * {
+      @apply !leading-[130%];
+      p {
+        @apply text-black;
+      }
+    }
+  }
+  p {
+    @apply text-base font-normal leading-[160%] text-gray;
+    a {
+      @apply !font-bold underline !text-green;
+    }
+    strong,
+    b {
+      @apply !font-bold;
+    }
+  }
+}
+
+:root {
+  font-family: Montserrat, sans-serif;
+}
