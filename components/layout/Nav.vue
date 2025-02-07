@@ -6,10 +6,9 @@ const white = ref(false)
 const route = useRoute()
 const routes = [
     '/',
-    '/blog',
-    '/amazon',
-    '/shipping',
-    '/subscription-boxes',
+    '/solutions/amazon',
+    '/solutions/shipping',
+    '/solutions/subscription-boxes',
 ]
 
 function nav() {
