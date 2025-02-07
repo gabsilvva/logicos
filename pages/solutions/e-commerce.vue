@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  titleTemplate: title => `E-commerce | ${title}`
+})
+</script>
+
 <template>
     <div>
         <PagesSolutionsEcommerceHeader

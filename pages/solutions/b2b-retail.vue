@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  titleTemplate: title => `B2B & Retail | ${title}`
+})
+</script>
+
 <template>
     <div>
         <PagesSolutionsB2bRetailHeader

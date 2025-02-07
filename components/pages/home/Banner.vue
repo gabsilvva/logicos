@@ -26,7 +26,7 @@ function toggle() {
 </script>
 
 <template>
-    <section class="c-home-banner relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(23,23,23,.64)] before:z-20 min-h-screen sm:min-h-0 py-[200px] sm:py-topm">
+    <section class="c-home-banner relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(23,23,23,.64)] before:z-20 py-[200px] sm:py-topm">
         <LayoutContainer class="relative z-30 flex flex-col items-start">
             <h1 class="text-white mb-8 sm:mb-4 max-w-[700px] w-full">
                 {{ title }}
@@ -50,8 +50,8 @@ function toggle() {
                 </button>
             </div>
         </LayoutContainer>
-        <video v-if="video" autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover z-10">
-            <source :src="video.mediaItemUrl" :type="video.mimeType">
+        <video v-if="video.mediaItemUrl" autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover z-10">
+            <source :src="video.mediaItemUrl" :type="video?.mimeType">
         </video>
     </section>
     <section v-if="numbers.length" class="border-b border-light-gray bg-light-green">

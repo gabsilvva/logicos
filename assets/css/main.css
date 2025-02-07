@@ -66,20 +66,34 @@
   h6 {
     &,
     & * {
-      @apply !leading-[130%];
+      @apply !leading-[120%];
       p {
         @apply text-black;
       }
     }
   }
   p {
-    @apply text-base font-normal leading-[160%] text-gray;
+    @apply text-lg sm:text-base font-normal leading-[160%] text-gray;
     a {
       @apply !font-bold underline !text-green;
     }
     strong,
     b {
       @apply !font-bold;
+    }
+  }
+  form {
+    fieldset {
+      label {
+        @apply block mb-3 sm:mb-2 font-normal text-base;
+      }
+      input,
+      textarea {
+        @apply block w-full bg-white h-12 border border-light-gray px-4 font-medium text-base focus:border-green hover:border-green;
+      }
+      textarea {
+        @apply pt-4 h-[160px] resize-none;
+      }
     }
   }
 }

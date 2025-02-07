@@ -54,6 +54,10 @@
 //   ogTitle: data.value.seo.title,
 //   ogDescription: data.value.seo.metaDesc
 // })
+
+useHead({
+  titleTemplate: title => `Why Lógicos | ${title}`
+})
 </script>
 
 <template>
@@ -201,8 +205,43 @@
                     text: 'Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry.'
                 }
             ]"
-            subtitle="Industries"
-            :words="['Cosmetics', 'Clothing and fashion', 'Supplements', 'Electronic Devices', 'Amazon', 'Collectibles', 'Sports', 'And more...']"
+        />
+        <UiServices
+            title="Industries"
+            :items="[
+                {
+                    icon: '/temp/cosmetics.svg',
+                    text: 'Cosmetics'
+                },
+                {
+                    icon: '/temp/clothing.svg',
+                    text: 'Clothing and Fashion'
+                },
+                {
+                    icon: '/temp/supplements.svg',
+                    text: 'Supplements'
+                },
+                {
+                    icon: '/temp/devices.svg',
+                    text: 'Electronic devices'
+                },
+                {
+                    icon: '/temp/a.png',
+                    text: 'Amazon'
+                },
+                {
+                    icon: '/temp/collectibles.svg',
+                    text: 'Collectibles'
+                },
+                {
+                    icon: '/temp/sport.svg',
+                    text: 'Sport'
+                },
+                {
+                    icon: '/temp/more.svg',
+                    text: 'And more...'
+                }
+            ]"
         />
         <UiClients
             title="Retailers we work with"

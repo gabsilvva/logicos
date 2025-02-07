@@ -16,7 +16,7 @@ defineProps({
                 <p class="max-w-[550px] w-full">{{ text }}</p>
                 <UiButton :href="url">{{ button }}</UiButton>
             </div>
-            <img class="mt-20 sm:mt-8 w-full rounded-[32px] sm:rounded-3xl" :src="image" :alt="title">
+            <img class="mt-20 sm:mt-8 w-full rounded-3xl" :src="image" :alt="title">
         </LayoutContainer>
     </section>
 </template>

@@ -3,10 +3,13 @@ const open = ref(false)
 const fixed = ref(false)
 const el = ref(null)
 const white = ref(false)
+const route = useRoute()
 const routes = [
     '/',
     '/blog',
-    '/amazon'
+    '/amazon',
+    '/shipping',
+    '/subscription-boxes',
 ]
 
 function nav() {
@@ -29,7 +32,9 @@ defineProps({
     white: Boolean
 })
 
-onMounted(() => routes.includes(window.location.pathname) ? white.value = true : white.value = false)
+watch(() => route.path, (newPath) => {
+  white.value = routes.includes(newPath)
+}, { immediate: true })
 </script>
 
 <template>
@@ -92,17 +97,17 @@ onMounted(() => routes.includes(window.location.pathname) ? white.value = true :
                         </template>
                     </ul>
 
-                    <div class="flex items-center sm:justify-between sm:w-full">
+                    <div class="flex items-center sm:justify-between sm:w-full gap-10 sm:gap-6">
                         <NuxtLink
                             :to="url"
-                            class="flex items-center gap-2 font-bold text-[15px] uppercase group mr-10"
+                            class="flex items-center gap-2 font-bold text-[15px] uppercase group"
                             :class="{ 'text-white': white && !open && !fixed }"
                         >
                             {{ button }}
-                            <VectorsUtilsArrowLink class="group-hover:translate-x-[4px]" :class="{ 'invert brightness-0': white }" />
+                            <VectorsUtilsArrowLink class="group-hover:translate-x-[4px]" :class="{ 'invert brightness-0': white && !open && !fixed }" />
                         </NuxtLink>
     
-                        <UiLanguage :white="white && !open && !fixed" />
+                        <!-- <UiLanguage :white="white && !open && !fixed" /> -->
                     </div>
                 </div>
     

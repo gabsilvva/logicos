@@ -3,9 +3,7 @@ defineProps({
     title: String,
     button: String,
     url: String,
-    cards: Array,
-    subtitle: String,
-    words: Array
+    cards: Array
 })
 </script>
 
@@ -31,22 +29,6 @@ defineProps({
             </ul>
             <div class="hidden sm:flex mt-8 justify-center">
                 <UiButton :href="url">{{ button }}</UiButton>
-            </div>
-            <div v-if="words.length">
-                <h5 class="pt-20 sm:pt-12 sm:pb-6 pb-8 sm:text-center">{{ subtitle }}</h5>
-                <ul class="flex flex-wrap sm:justify-center sm:gap-3 gap-4">
-                    <li
-                        v-for="i, index in words"
-                        :key="index"
-                    >
-                        <p
-                            class="border border-light-gray text-gray uppercase text-base sm:text-sm font-medium leading-[100%] rounded-full px-6 sm:px-4 sm:py-2 py-3"
-                            :class="{ 'text-green bg-light-green border-0': index === words.length - 1 }"
-                        >
-                            {{ i }}
-                        </p>
-                    </li>
-                </ul>
             </div>
         </LayoutContainer>
     </section>

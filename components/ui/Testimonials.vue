@@ -18,7 +18,7 @@ defineProps({
                     </button>
                 </div>
                 <Swiper
-                    class="max-w-[460px] w-full mx-0 !py-32 sm:!py-0"
+                    class="max-w-[460px] w-full !mx-0 !py-32 sm:!py-0"
                     :modules="[SwiperNavigation]"
                     :slides-per-view="1"
                     :loop="true"

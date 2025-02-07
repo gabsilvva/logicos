@@ -23,6 +23,7 @@
     "postcss": "^8.4.49",
     "postcss-nesting": "^13.0.1",
     "vue": "latest",
+    "vue-recaptcha-v3": "^2.0.1",
     "vue-router": "latest"
   },
   "devDependencies": {}

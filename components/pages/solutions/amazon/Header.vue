@@ -16,7 +16,7 @@ defineProps({
                 <span class="w-6 h-6 bg-black mx-[-8px] rounded-full relative z-10"></span>
                 <UiIcon bg="#44BD32" icon="/temp/li.svg" class="!m-0" />
             </div>
-            <div class="flex items-center justify-between mb-20 sm:mb-10">
+            <div class="flex items-center gap-2 justify-between mb-20 sm:mb-10 sm:flex-col sm:items-start">
                 <h1 class="text-white">{{ title }}</h1>
                 <p class="text-white max-w-[460px] w-full">{{ text }}</p>
             </div>

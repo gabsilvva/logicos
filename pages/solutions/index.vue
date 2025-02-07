@@ -1,5 +1,7 @@
 <script setup>
-
+useHead({
+  titleTemplate: title => `Solutions | ${title}`
+})
 </script>
 
 <template>

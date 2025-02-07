@@ -15,7 +15,7 @@ defineProps({
                 <aside class="w-full">
                     <h4 class="mb-4">{{ title }}</h4>
                     <p class="mb-10 max-w-[650px] w-full">{{ text }}</p>
-                    <ul class="flex flex-wrap gap-x-7 gap-y-8 sm:gap-x-8 sm:gap-y-6">
+                    <ul class="flex flex-wrap items-center gap-x-7 gap-y-8 sm:gap-x-8 sm:gap-y-6">
                         <li
                             v-for="i, index in logos"
                             :key="index"
