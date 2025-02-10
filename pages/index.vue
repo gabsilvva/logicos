@@ -65,7 +65,7 @@ useHead({
       text="<p>Our deal is simple, we work hard to simplify your operations so you can focus on what really matters: <strong>growing and improving your business</strong>.</p>"
       button="Get started"
       url="/contact"
-      :video="{ mediaItemUrl: '/temp/video.mp4' }"
+      :video="{ mediaItemUrl: '/temp/video2.mp4' }"
       :numbers="[
         {
           number: '600',
@@ -88,33 +88,25 @@ useHead({
         url="/contact"
         :items="[
           {
-            icon: '/temp/h1.svg',
+            icon: '/temp/h12.svg',
             title: 'We make the process easier for you',
             text: 'We love logistics and we know that it is a complicated process, thats why we take care of everything for you.'
           },
           {
-            icon: '/temp/h2.svg',
+            icon: '/temp/h22.svg',
             title: 'We want  go <br /> see you grow',
             text: 'We optimize operations so you can scale your business model. If you grow, we grow with you.'
           },
           {
-            icon: '/temp/h3.svg',
+            icon: '/temp/h32.svg',
             title: 'We are <br /> transparent',
             text: 'We work with a unique billing system, without hidden costs, where you can see everything you pay.'
           }
         ]"
     />
-    <PagesHomeCTA
-      subtitle="We help you with whatever you need"
-      title="Get a quote"
-      button="Get started"
-      url="/contact"
-      image="/temp/quote.png"
-    />
     <UiTabs
       :tabs="[
           {
-            subtitle: 'our principal solutions',
             name: 'E-commerce',
             icon: '/temp/iecommerce.svg',
             title: 'E-commerce',
@@ -124,7 +116,6 @@ useHead({
             bullets: []
           },
           {
-            subtitle: 'our principal solutions',
             name: 'B2B & Retail',
             icon: '/temp/b2bi2.svg',
             title: 'B2B & Retail',
@@ -134,7 +125,6 @@ useHead({
             bullets: []
           },
           {
-            subtitle: 'our principal solutions',
             name: 'Amazon',
             icon: '/temp/az.svg',
             title: 'Amazon',

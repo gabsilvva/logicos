@@ -11,7 +11,7 @@ const props = defineProps({
 
 const active = ref(0)
 
-onMounted(() => setInterval(() => active.value === props.words.length - 1 ? active.value = 0 : active.value++, 3000))
+onMounted(() => setInterval(() => active.value === props.words.length - 1 ? active.value = 0 : active.value++, 2000))
 
 const pause = ref(false)
 

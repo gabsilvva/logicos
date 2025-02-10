@@ -7,7 +7,6 @@ const route = useRoute()
 const routes = [
     '/',
     '/solutions/amazon',
-    '/solutions/shipping',
     '/solutions/subscription-boxes',
 ]
 

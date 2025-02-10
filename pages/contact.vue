@@ -16,10 +16,10 @@ useHead({
           address="Andrés Álvarez Caballero, 22​ P.I. <br /> Valdonaire​ Humanes, Madrid"
         />
         <PagesContactForm
-          name="Your First Name"
+          name="First Name"
           email="Your Best E-mail"
-          phone="Your Phone Number"
-          message="Your Message"
+          phone="Phone Number"
+          message="Message"
           checkbox="I agree to receive communications from Lógicos 3PL."
           text="You can unsubscribe from these communications at any time. For more information, consult our <a href='https://link.com.br' target='_blank'>Privacy Policy</a>. <br /> By clicking Submit, you agree that Lógicos 3PL will store and process the personal information you provide to provide you with the requested content."
           button="Send"

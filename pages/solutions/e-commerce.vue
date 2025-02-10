@@ -26,18 +26,18 @@ useHead({
                     url: '/contact'
                 },
                 {
-                    name: 'Order Preparation',
-                    icon: '/temp/order.svg',
-                    title: 'Lorem ipsum dolor amets',
+                    name: 'Reception',
+                    icon: '/temp/reception.svg',
+                    title: 'Lorem Ipsum is simply',
                     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.',
                     bullets: [],
                     button: 'Get started',
                     url: '/contact'
                 },
                 {
-                    name: 'Reception',
-                    icon: '/temp/reception.svg',
-                    title: 'Lorem Ipsum is simply',
+                    name: 'Order Preparation',
+                    icon: '/temp/order.svg',
+                    title: 'Lorem ipsum dolor amets',
                     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.',
                     bullets: [],
                     button: 'Get started',

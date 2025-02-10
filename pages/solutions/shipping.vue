@@ -10,28 +10,12 @@ useHead({
       title="The Best Shipping For Your Products"
       button="Get started"
       url="/contact"
-      image="/temp/shipping.png"
+      image="/temp/shipping.jpg"
     />
     <PagesSolutionsShippingAbout
       title="Wide <br /> Transportation Offer"
       text="We have a wide range of transportation services to cover the needs of your business. We collaborate with different partners to find the transportation service that meets the characteristics of your shipments. Thanks to our extensive network, we can ship your products to any part of the world with competitive prices."
       :logos="[
-        {
-          logo: '/temp/amazon-color.png',
-          name: 'Amazon'
-        },
-        {
-          logo: '/temp/seur.png',
-          name: 'Seur'
-        },
-        {
-          logo: '/temp/ctt.png',
-          name: 'ctt'
-        },
-        {
-          logo: '/temp/ups.png',
-          name: 'UPS'
-        },
         {
           logo: '/temp/correos.png',
           name: 'Correos Express'
@@ -39,7 +23,23 @@ useHead({
         {
           logo: '/temp/tipsa.png',
           name: 'Tipsa'
-        }
+        },
+        {
+          logo: '/temp/ups.png',
+          name: 'UPS'
+        },
+        {
+          logo: '/temp/ctt.png',
+          name: 'ctt'
+        },
+        {
+          logo: '/temp/seur.png',
+          name: 'Seur'
+        },
+        {
+          logo: '/temp/amazon-shipping.png',
+          name: 'Amazon Shipping'
+        },
       ]"
       :bullets="['Shipments in 24 hours', 'Containers', 'Freight Forwarding']"
     />

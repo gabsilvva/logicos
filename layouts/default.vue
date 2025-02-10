@@ -101,6 +101,15 @@
       name="Lógicos"
       :menu="[
         {
+          uri: '/why-logicos',
+          target: '',
+          label: 'Why Lógicos',
+          parentId: '',
+          childItems: {
+            nodes: []
+          }
+        },
+        {
           uri: '/solutions',
           target: '',
           label: 'Solutions',
@@ -108,9 +117,9 @@
           childItems: {
             nodes: [
               {
-                uri: '/solutions/amazon',
+                uri: '/solutions/e-commerce',
                 target: '',
-                label: 'Amazon',
+                label: 'E-commerce',
               },
               {
                 uri: '/solutions/b2b-retail',
@@ -118,14 +127,9 @@
                 label: 'B2B & Retail',
               },
               {
-                uri: '/solutions/e-commerce',
+                uri: '/solutions/amazon',
                 target: '',
-                label: 'E-commerce',
-              },
-              {
-                uri: '/solutions/order-to-cash',
-                target: '',
-                label: 'Order to Cash',
+                label: 'Amazon',
               },
               {
                 uri: '/solutions/shipping',
@@ -133,20 +137,16 @@
                 label: 'Shipping',
               },
               {
+                uri: '/solutions/order-to-cash',
+                target: '',
+                label: 'Order to Cash',
+              },
+              {
                 uri: '/solutions/subscription-boxes',
                 target: '',
                 label: 'Subscription Boxes',
               }
             ]
-          }
-        },
-        {
-          uri: '/why-logicos',
-          target: '',
-          label: 'Why Lógicos',
-          parentId: '',
-          childItems: {
-            nodes: []
           }
         },
         {

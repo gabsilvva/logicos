@@ -10,6 +10,7 @@ defineProps({
     <LayoutContainer>
       <h3 v-if="title" class="mb-10 sm:mb-8 sm:text-center">{{ title }}</h3>
       <Swiper
+        class="!pb-px"
         :modules="[SwiperAutoplay]"
         :breakpoints="{
           300: {
